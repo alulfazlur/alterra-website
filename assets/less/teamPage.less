@@ -1,0 +1,73 @@
+.background {
+  background-image: @batik, @batik;
+  background-size: 15%;
+  background-position: top 4% left 0, bottom 8% right;
+  background-repeat: no-repeat;
+}
+.alul {
+  h2 {
+    padding-left: 5%;
+    padding-top: 2%;
+  }
+}
+
+.pht {
+  img {
+    width: 82%;
+    height: 82%;
+    margin-right: 0;
+    padding-left: 15%;
+    position: relative;
+    padding-top: 5%;
+  }
+}
+.border-out {
+  border: @orange @profil-border;
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  margin-left: 8%;
+  top: 8%;
+}
+.data {
+  height: 90%;
+  margin-top: 15%;
+  text-align: left;
+  padding-left: 0;
+}
+
+.edu {
+  padding-left: 9%;
+  &exp {
+    text-align: left;
+    border-bottom: 2px dashed rgb(194, 194, 194);
+    margin-top: 10%;
+    img {
+      width: 5%;
+      height: 5%;
+    }
+    ul {
+      li {
+        line-height: 200%;
+        margin: 1%;
+      }
+    }
+  }
+}
+
+.exp {
+  padding-left: 10%;
+}
+
+.edu li span,
+.exp li span {
+  font-weight: 900;
+}
+
+/* Rizal Only */
+.rizal .border-out {
+  border: @navy @profil-border;
+}
+.rizal .eduexp {
+  border-bottom: 0;
+}

@@ -1,0 +1,358 @@
+@import "variable";
+
+/* ====================================== Section 1 ====================================== */
+
+.intro {
+  padding: 10%;
+  background-color: @button-whitehover;
+}
+
+.intro h1::before,
+.intro h1:after {
+  display: none;
+}
+
+.text-intro {
+  margin-top: 5%;
+  font-family: @muli;
+  color: @navy;
+}
+
+.greet {
+  text-align: left;
+  letter-spacing: 0;
+  opacity: 1;
+  h4 {
+    font-weight: 900;
+  }
+}
+
+.we-are {
+  h1 {
+    text-align: left;
+    font-family: @roboto;
+    letter-spacing: 0;
+    font-weight: 700;
+    bottom: 0;
+  }
+  span {
+    color: @orange;
+  }
+}
+
+.intro-desc {
+  p {
+    top: 484px;
+    left: 617px;
+    text-align: left;
+    font: Bold 17px/24px;
+    letter-spacing: 0;
+    font-weight: 700;
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.button1 {
+  width: 230px;
+  height: 40px;
+  background: @orange 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px @shadow;
+  border-radius: 50px;
+  opacity: 1;
+  text-align: center;
+  font: Bold 15px/24px;
+  letter-spacing: 0;
+  color: white;
+  opacity: 1;
+  font-weight: 700;
+
+  img {
+    width: 10%;
+    height: 50%;
+  }
+  .img-hover {
+    display: none;
+  }
+  a {
+    color: white;
+  }
+  &:hover {
+    background-color: @button-whitehover;
+    border-color: @orange;
+    transition: 0.5;
+    color: @orange;
+    transition: 0.3s;
+
+    .img {
+      display: none;
+    }
+    .img-hover {
+      display: inline-block;
+    }
+    a {
+      color: @orange;
+      text-decoration: none;
+    }
+  }
+}
+
+.image-intro {
+  text-align: center;
+  img {
+    width: 90%;
+  }
+}
+
+/* ====================================== Section 2 ====================================== */
+
+.info-home {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.img-info {
+  display: inline-flex;
+  padding-top: 6%;
+  padding-left: 3%;
+  padding-bottom: 6%;
+}
+
+.img-list {
+  width: 40px;
+  height: 40px;
+  border: 1px solid @orange;
+  border-radius: 50%;
+  background-color: @orange;
+}
+
+.text-info-1 {
+  font-family: @roboto;
+  font-weight: bold;
+  color: @navy;
+  padding-right: 15%;
+}
+.spasi-info {
+  border-right: 2px solid @shadow;
+  padding-left: 17%;
+}
+
+.spasi {
+  padding-left: 3%;
+}
+
+.text-2 {
+  font-size: medium;
+}
+
+.garis-info {
+  margin-left: 17%;
+  margin-right: 17%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-left: 4%;
+  padding-right: 0%;
+  border: 2px solid @shadow;
+  border-radius: 100px;
+  box-shadow: 0px 0px 6px @shadow;
+  opacity: 1;
+}
+
+/* ====================================== Section 3 ====================================== */
+
+.section3 {
+  h1 {
+    margin: 3% 0;
+  }
+}
+
+.alterra-is-for-everyone {
+  background-image: @blue-home;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  box-shadow: inset 0 0 0 1000px rgba(25, 52, 94, 0.75);
+}
+
+.people {
+  display: block;
+  padding-top: 8%;
+  text-shadow: azure;
+  &:after,
+  &:before {
+    display: none;
+  }
+}
+
+.brandnew {
+  margin-bottom: 10%;
+  font-weight: 700;
+}
+
+/* ====================================== Section 4 ====================================== */
+
+.section4 {
+  background-image: @batik;
+  background-size: 12%;
+  background-repeat: no-repeat;
+}
+
+.subtitle {
+  text-align: center;
+  &-line-1 {
+    margin-bottom: 0;
+  }
+}
+
+.img-profil,
+.img-profil-mid {
+  width: 90%;
+  margin-left: 12%;
+}
+
+.profil {
+  padding-top: 3%;
+  &-border-out {
+    border: @orange @profil-border;
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    margin-left: 5%;
+    top: 6%;
+
+    &-mid {
+      border: @navy @profil-border;
+    }
+  }
+  &-name {
+    font-family: @roboto;
+    text-align: center;
+    color: @orange;
+    font-weight: 900;
+    font-size: large;
+    padding-top: 8%;
+    margin-bottom: 0;
+  }
+}
+
+.profil {
+  margin: 3% 0;
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
+
+  :hover {
+    cursor: pointer;
+    margin-top: 10px;
+
+    .img-profil {
+      -webkit-box-shadow: 14px 28px 4px 0px rgba(224, 221, 224, 1);
+      -moz-box-shadow: 14px 28px 4px 0px rgba(224, 221, 224, 1);
+      box-shadow: 14px 28px 4px 0px rgba(224, 221, 224, 1);
+      transition: 0.2s;
+    }
+
+    .profil-border-out {
+      border: @navy @profil-border;
+      transition: 0.4s;
+      &-mid {
+        border: @orange @profil-border;
+      }
+    }
+  }
+}
+
+.profil-mid {
+  margin: 3% 0;
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
+
+  :hover {
+    cursor: pointer;
+    margin-top: 10px;
+
+    .img-profil {
+      -webkit-box-shadow: 14px 28px 4px 0px rgba(224, 221, 224, 1);
+      -moz-box-shadow: 14px 28px 4px 0px rgba(224, 221, 224, 1);
+      box-shadow: 14px 28px 4px 0px rgba(224, 221, 224, 1);
+      transition: 0.2s;
+    }
+
+    .profil-border-out-mid {
+      border: @orange @profil-border;
+      transition: 0.4s;
+    }
+  }
+}
+
+.designer {
+  font-family: @poppins;
+  font-size: 14px;
+  color: @navy;
+  text-align: center;
+}
+
+.check-now {
+  margin-top: 30px;
+  text-align: right;
+  margin-right: 46px;
+
+  a {
+    color: @navy;
+  }
+  &:hover {
+    a {
+      color: @orange;
+      text-decoration: none;
+    }
+  }
+}
+
+/* ====================================== Section 5 ====================================== */
+
+.section5 {
+  h1 {
+    margin-bottom: 0;
+  }
+}
+
+.blog {
+  text-align: center;
+  padding: 5% 14%;
+  .h4 {
+    text-align: left;
+    font-weight: 900;
+    margin-top: 10%;
+    font-size: medium;
+  }
+}
+
+.text-blogs {
+  text-align: left;
+  font-size: smaller;
+}
+
+.img-blog-home {
+  width: 100%;
+}
+.editordate {
+  font-size: smaller;
+  color: @text-disabled;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.readmore {
+  text-align: right;
+  a {
+    font-size: smaller;
+    text-decoration: underline;
+    color: @navy;
+  }
+  &:hover {
+    color: @orange;
+  }
+}
